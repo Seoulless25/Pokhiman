@@ -1,0 +1,36 @@
+<%- include('../partials/header') %>
+
+<table id="list">
+  <thead>
+    <tr>
+      <th>Team Name</th>
+      <th>Pokemon</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% teams.forEach(function(t) { %>
+      <tr>
+        <td><%= t.teamName %></td>
+        <td><%= t.pokemonFirst %></td>
+        <td><%= t.pokemonSecond %></td>
+        <td><%= t.pokemonThird %></td>
+        <td><%= t.pokemonFourth %></td>
+        <td><%= t.pokemonFifth %></td>
+        <td><%= t.pokemonSixth %></td>
+        <td><a href="/teams/<%= t._id %>">Team Info</a></td>
+        <td>
+          <a href="/teams/<%= t._id %>/reviews">Leave a Review</a>
+        </td>
+        <td>
+          <form action="/teams/delete" method="POST">
+            <input value="<%= t._id %>" hidden name="teamId"> 
+            <button>Delete Team</button>  
+          </form>
+        </td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  
+<%- include('../partials/footer') %>

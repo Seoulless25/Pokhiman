@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Review</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let total = 0 %>
+      <% reviews?.forEach(function(r) { %>
+        <% total += r.rating %>
+        <tr>
+          <td class="review-user"><img alt="avatar" src="<%= r.user.avatar %>" referrerpolicy="no-referrer" ><%= r.user.name %></td>
+          <!-- <td><%= r.createdAt.toLocaleDateString() %></td> -->
+          <td><%= r.comment %></td>
+          <td><%= r.rating %></td>
+        </tr>
+      <% }); %>
+      <tr>
+        <td colspan="1"></td>
+        <td><strong><%= (total / reviews?.length).toFixed(1) %></strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+<%- include('../partials/footer') %>

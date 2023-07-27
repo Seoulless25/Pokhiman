@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/teams" method="POST">
+    <label>Name:</label>
+    <input type="text" name="teamName">
+    <label>Pokemon 1:</label>
+    <input type="text" name="pokemonFirst">
+    <label>Pokemon 2:</label>
+    <input type="text" name="pokemonSecond">
+    <label>Pokemon 3:</label>
+    <input type="text" name="pokemonThird">
+    <label>Pokemon 4:</label>
+    <input type="text" name="pokemonFourth">
+    <label>Pokemon 5:</label>
+    <input type="text" name="pokemonFifth">
+    <label>Pokemon 6:</label>
+    <input type="text" name="pokemonSixth">
+    <input type="submit" value="Create Team">
+
+    <!-- <form action="/teams/< team._id %>?_method=DELETE" method="post">
+      <button type="submit">Completed</button> -->
+  </form>
+</form>
+
+<%- include('../partials/footer') %>
