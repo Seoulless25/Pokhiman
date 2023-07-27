@@ -3,6 +3,7 @@
 <table id="list">
   <thead>
     <tr>
+      <th>User</th>
       <th>Team Name</th>
       <th>Pokemon</th>
       <th></th>
@@ -11,6 +12,7 @@
   <tbody>
     <% teams.forEach(function(t) { %>
       <tr>
+        <td><%= t.user %></td>
         <td><%= t.teamName %></td>
         <td><%= t.pokemonFirst %></td>
         <td><%= t.pokemonSecond %></td>
@@ -32,5 +34,11 @@
       <% }); %>
     </tbody>
   </table>
+
+  <h3>
+    <div class="psy">
+      <a href="/"><img src="https://images2.imgbox.com/d4/ef/JZAbHoIm_o.png" width="100"></a>
+    </div>
+  </h3>
   
 <%- include('../partials/footer') %>

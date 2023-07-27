@@ -66,8 +66,9 @@ nav > a.active {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(2, minmax(auto, 10rem));
-  margin-top: 200px;
+  margin-top: 100px;
   font-weight: bold;
+  margin-bottom: -524px;
 }
 
 #new-form *,

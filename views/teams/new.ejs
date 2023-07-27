@@ -1,5 +1,7 @@
 <%- include('../partials/header') %>
 
+<h1 class='teambuilder'> Team Builder</h1>
+
 <form id="new-form" action="/teams" method="POST">
     <label>Name:</label>
     <input type="text" name="teamName">
@@ -16,10 +18,12 @@
     <label>Pokemon 6:</label>
     <input type="text" name="pokemonSixth">
     <input type="submit" value="Create Team">
-
-    <!-- <form action="/teams/< team._id %>?_method=DELETE" method="post">
-      <button type="submit">Completed</button> -->
   </form>
 </form>
 
+<h3>
+  <div class="psy">
+    <a href="/"><img src="https://images2.imgbox.com/d4/ef/JZAbHoIm_o.png" width="100"></a>
+  </div>
+</h3>
 <%- include('../partials/footer') %>

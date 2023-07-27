@@ -15,7 +15,12 @@ const teamSchema = new Schema({
             ref: 'Review',
             required: true 
         },
-    ]
+    ],
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true 
+    }
 })
 
 module.exports = mongoose.model('Team', teamSchema);
