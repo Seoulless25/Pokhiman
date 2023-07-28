@@ -72,11 +72,12 @@ nav > a.active {
 }
 
 #new-form *,
-#add-review-form *,
-#add-performer-form * {
+#add-review-form * {
   font-size: 20px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  transition: .3s black;
 }
 
 #new-form input[type="submit"] {
