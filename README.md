@@ -2,11 +2,11 @@
 
 ## Screenshots
 
-https://images2.imgbox.com/3d/9b/vyRJBSdI_o.png
+<img src="https://images2.imgbox.com/3d/9b/vyRJBSdI_o.png">
 
-https://images2.imgbox.com/6d/bb/Vbs3mjlg_o.png
+<img src="https://images2.imgbox.com/6d/bb/Vbs3mjlg_o.png">
 
-https://images2.imgbox.com/ca/00/62JNhcTo_o.png
+<img src="https://images2.imgbox.com/ca/00/62JNhcTo_o.png">
 
 ## Demo
 
