@@ -1,5 +1,7 @@
 # POKHIMAN
 
+The Pokhiman Team Builder app is a user-friendly tool that was designed to assist trainers in creating their optimal team. Whether it's for battles, tournaments, or just your next causal playthrough, this app can do it all! New and old players alike will find this to be a useful tool for all Pokemon related endeavors.
+
 ## Screenshots
 
 <img src="https://images2.imgbox.com/3d/9b/vyRJBSdI_o.png">
@@ -16,8 +18,8 @@ https://new-project-6073edca91e3.herokuapp.com
 
 ## Funcitonality 
 
-- Users can log-in with their Google account in order to create a Pokemon team to plan out their next journey.
-- Once a team is created, users can post their team and allow for other users to view and comment/review them.
+- Create and manage multiple Pokemon teams with ease.
+- Save your team compositions for later reference or share them with friends and the wider community. Collaborate with others to tune your strategies and sharpen your overall team-building skills.
 
 ## Icebox Features
 
