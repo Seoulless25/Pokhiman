@@ -11,6 +11,7 @@ module.exports = {
 
 async function index(req, res) {
   const teams = await Team.find({})
+  console.log(teams);
   res.render('teams/index', { title: 'All Teams', teams })
 }
 
@@ -19,6 +20,27 @@ function newTeam(req, res) {
 }
 
 async function create(req, res) {
+  console.log(req.user);
+  // const viewTeam = new Team ({
+  //   teamName: req.body.teamName,
+  //   pokemonFirst: req.body.pokemonFirst,
+  //   pokemonSecond: req.body.pokemonSecond,
+  //   pokemonThird: req.body.pokemonThird,
+  //   pokemonFourth: req.body.pokemonFourth,
+  //   pokemonFifth: req.body.pokemonFifth,
+  //   pokemonSixth: req.body.pokemonSixth,
+  //   user: {
+  //     _id:req.user._id
+  //   }
+  // })
+  // console.log(viewTeam);
+  // console.log(req.body);
+
+  // const team = await Team.create(req.body)
+  // console.log(team._id);
+  // const foundTeam = await Team.findById(team._id)
+  // console.log(foundTeam);
+
   for (let key in req.body) {
     if (req.body[key] === '') delete req.body[key]
   }

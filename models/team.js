@@ -13,13 +13,13 @@ const teamSchema = new Schema({
             {
             type: Schema.Types.ObjectId,
             ref: 'Review',
-            required: true 
+            // required: true 
         },
     ],
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
-        required: true 
+        // required: true 
     }
 })
 
